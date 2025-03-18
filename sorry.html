@@ -1,0 +1,81 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry Nehhaa</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            font-family: 'Dancing Script', cursive;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        button {
+            margin: 10px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 20px;
+            background: #ff6f61;
+            color: white;
+            font-size: 20px;
+            font-family: 'Dancing Script', cursive;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #ff4d4d;
+        }
+    </style>
+    <script>
+        let prompts = [
+            "Oops! Try again!",
+            "Please click Yes, Nehhaa!",
+            "Come on, just click Yes!",
+            "I know you want to forgive me!",
+            "Pretty please, just say Yes!",
+            "I won't give up until you click Yes!",
+            "You know you want to!",
+            "Forgive me, my love! 💖",
+            "Don't be mad, my sweet angel!",
+            "Just one Yes can make my day!",
+            "Aww, come on! Give me a Yes!",
+            "One little click, and I'll be the happiest!",
+            "I'm not giving up! Click Yes!",
+            "Your smile means everything to me!",
+            "It hurts when you say No 😢"
+        ];
+        function tryAgain() {
+            const randomMessage = prompts[Math.floor(Math.random() * prompts.length)];
+            alert(randomMessage);
+        }
+        function openApology() {
+            window.location.href = "apology.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="card">
+        <h2>I'm Sorry, Nehhaa 💔</h2>
+        <p>Please forgive me?</p>
+        <button onclick="openApology()">Yes</button>
+        <button onclick="tryAgain()">No</button>
+    </div>
+</body>
+</html>
+
+
